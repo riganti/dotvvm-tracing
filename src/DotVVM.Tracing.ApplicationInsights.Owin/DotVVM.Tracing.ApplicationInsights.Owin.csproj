@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyTitle>DotVVM.Tracing.ApplicationInsights.Owin</AssemblyTitle>
     <VersionPrefix>3.2.0</VersionPrefix>
-    <TargetFrameworks>net452</TargetFrameworks>
+    <TargetFrameworks>net472</TargetFrameworks>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyOriginatorKeyFile>dotvvmwizard.snk</AssemblyOriginatorKeyFile>
@@ -22,8 +22,8 @@
 
   <ItemGroup>
     <PackageReference Include="DotVVM" Version="$(DotvvmVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="1.0.0" />
-    <PackageReference Include="System.Text.Encodings.Web" Version="4.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DotVVM.Tracing.ApplicationInsights\DotVVM.Tracing.ApplicationInsights.csproj" />

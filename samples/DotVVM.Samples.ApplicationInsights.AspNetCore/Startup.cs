@@ -31,11 +31,11 @@ namespace DotVVM.Samples.ApplicationInsights.AspNetCore
             services.AddWebEncoders();
             services.AddApplicationInsightsTelemetry(Configuration);
             services.AddDotVVM<DotvvmStartup>();
+            services.AddLogging(s => s.AddConsole());
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            loggerFactory.AddConsole();
             
             app.UseDotVVM<DotvvmStartup>(env.ContentRootPath);
         }
